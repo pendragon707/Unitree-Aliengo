@@ -1,0 +1,14 @@
+theme: just-the-docs
+title: Unitree-Aliengo
+
+nav_exclude: false
+
+navigation:
+  - title: Документация
+    items:
+      - title: Быстрый старт
+        url: /introduction/
+      - title: Технические характеристики
+        url: /specifications/
+      - title: Гайды
+        url: /tutorials/
