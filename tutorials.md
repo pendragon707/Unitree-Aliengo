@@ -34,7 +34,7 @@ sudo putty /dev/ttyUSB0 -serial -sercfg 115200,8,n,1,N
 
 ![3](images/3.png "3")
 
-На основе этих :[материалов](https://robodocs.3logic.ru/docs/Unitree%20Robotics/AlienGo/aliengo_get_logs.html)
+На основе этих [материалов](https://robodocs.3logic.ru/docs/Unitree%20Robotics/AlienGo/aliengo_get_logs.html)
 
 ## Подключение по Wi-Fi
 
@@ -49,7 +49,7 @@ wi-fi: aliengo-xxx
 - 2 инфракрасные камеры - Intel Realsense D435i 
 - Камера одометрии - Intel Realsence T265
 
-:[Документация](https://unitree-docs.readthedocs.io/en/latest/Aliengo/AlienGo.html)
+[Документация](https://unitree-docs.readthedocs.io/en/latest/Aliengo/AlienGo.html)
 
 ## Управление через ros noetic
 

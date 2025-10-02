@@ -20,7 +20,7 @@
 
 После включения робот находится в стандартном режиме (low-level). В этом режиме можно управлять напрямую моторами через unitree_legged_sdk. 
 
-Подробнее про :[включение](https://robodocs.3logic.ru/docs/Unitree%20Robotics/AlienGo/aliengo_general.html)
+Подробнее про [включение](https://robodocs.3logic.ru/docs/Unitree%20Robotics/AlienGo/aliengo_general.html)
 
 Что делать в экстренной ситуации:
 
