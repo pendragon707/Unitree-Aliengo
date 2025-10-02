@@ -1,4 +1,7 @@
-theme: jekyll-theme-minimal
+remote_theme: vaibhavvikas/jekyll-theme-minimalistic
+plugins:
+  - jekyll-remote-theme
+
 title: Unitree-Aliengo
 
 nav_exclude: false
