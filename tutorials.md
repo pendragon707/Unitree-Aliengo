@@ -6,11 +6,11 @@
 
 1. Подключиться к RS-485 разъёму Aliengo (переходник RS-485 - USB есть в чемодане)
 
-![1](/images/1.png "1")
+![1](images/1.png "1")
 
 2. При подключении к роботу появляется терминал /dev/ttyUSB0
 
-![2](/images/2.png "2")
+![2](images/2.png "2")
 
 Установить PuTTY:
 
@@ -32,7 +32,7 @@ sudo putty /dev/ttyUSB0 -serial -sercfg 115200,8,n,1,N
 	
 После отправки команды появляется окно, в которое в реальном времени выводятся логи:
 
-![3](/images/3.png "3")
+![3](images/3.png "3")
 
 На основе этих :[материалов](https://robodocs.3logic.ru/docs/Unitree%20Robotics/AlienGo/aliengo_get_logs.html)
 
