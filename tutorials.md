@@ -49,6 +49,34 @@ wi-fi: aliengo-xxx
 - 2 инфракрасные камеры - Intel Realsense D435i 
 - Камера одометрии - Intel Realsence T265
 
+Подключиться к голове
+
+ssh unitree@192.168.123.12
+123
+
+Запустить RobotVisionSystem
+
+cd RobotVisionSystem
+./start.sh
+
+В случае возникновения ошибок 
+
+ps -aux | grep RobotVisionSystem
+
+и убить все процессы, которые будут в списке:
+kill -9 <pid>
+
+После попробовать снова запустить
+
+С ноута подключиться к wi-fi, который раздает MiniPC внутри Aliengo (подождать 3-5 минуты после включения)
+aliengo....
+password: 00000000
+
+В браузере открыть:
+http://192.168.123.12:8080/?action=stream
+
+http://192.168.123.12:8080/videolan.html
+
 [Документация](https://unitree-docs.readthedocs.io/en/latest/Aliengo/AlienGo.html)
 
 ## Управление через ros noetic
