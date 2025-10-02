@@ -1,8 +1,8 @@
-## Содержание
+# Содержание
 - [Снятие логов c Aliengo](#Снятие логов c Aliengo)
 - [Доступ к камере Aliengo](#Доступ к камере Aliengo)
 
-### Снятие логов c Aliengo
+## Снятие логов c Aliengo
 
 1. Подключиться к RS-485 разъёму Aliengo (переходник RS-485 - USB есть в чемодане)
 
@@ -36,9 +36,59 @@ sudo putty /dev/ttyUSB0 -serial -sercfg 115200,8,n,1,N
 
 На основе этих :[материалов](https://robodocs.3logic.ru/docs/Unitree%20Robotics/AlienGo/aliengo_get_logs.html)
 
+## Подключение по Wi-Fi
+
+За раздачу Wi-Fi отвечает MiniPC. Подождите 3–5 минут после включения AlienGo, затем подключитесь к точке доступа, предоставленной собакой-роботом.
+
+wi-fi: aliengo-xxx
+Пароль: 00000000
+
 ## Доступ к камере Aliengo
 
 На Aliengo есть:
 - 2 инфракрасные камеры - Intel Realsense D435i 
 - Камера одометрии - Intel Realsence T265
 
+:[Документация](https://unitree-docs.readthedocs.io/en/latest/Aliengo/AlienGo.html)
+
+## Управление через ros noetic
+
+## Запуск аудио
+
+В Aliengo нет встроенных динамиков, но можно подключить свой динамик через один из портов и работать с ним точно так же, как на обычном компьютере с ubuntu.
+
+1. Connect your own computer to the 123 segment network of Aliengo.
+
+```
+ping 192.168.123.12
+```
+
+Check the sound card id and channel id (usually 2, 0) of the USB Audio Device.
+
+```
+aplay -l
+```
+
+1. Play audio files by aplay command
+
+```
+aplay -D plughw:2,0 xxx.wav
+```
+
+Adjust volume: 37 corresponds to 100% volume, 0 corresponds to 0% volume.
+
+```
+amixer -c 2 set Speaker 37
+amixer -c 2 set Speaker 18
+```
+
+If you use aplay to prompt an error audio open
+
+error: Device or resource busy : This situation is caused by the built-in program wsaudio occupying the speaker. We can check the process number and kill it before trying again.
+
+Fix:
+
+```
+ps -aux | grep wsaudio
+sudo kill -9 PID
+```

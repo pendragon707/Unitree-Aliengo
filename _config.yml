@@ -7,11 +7,17 @@ title: Unitree-Aliengo
 nav_exclude: false
 
 navigation:
-  - title: Документация
-    items:
-      - title: Быстрый старт
-        url: /introduction/
-      - title: Технические характеристики
-        url: /specifications/
-      - title: Гайды
-        url: /tutorials/
+  - name: Aliengo
+    link: ./README.md
+  - name: Быстрый старт
+    link: ./introduction.md
+  - name: Технические характеристики
+    link: ./specifications.md
+  - name: Архитектура системы
+    link: ./aliengo.md    
+  - name: Гайды
+    link: ./tutorials.md
+  - name: Проект rl_go1 (управление робособакой через сдк)
+    link: ./sdk.md    
+  - name: Проект RMA (обучение RL-политик)
+    link: ./rma.md    
