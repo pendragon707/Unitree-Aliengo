@@ -8,16 +8,16 @@ nav_exclude: false
 
 navigation:
   - name: Aliengo
-    link: ./README.md
+    link: ./README.html
   - name: Быстрый старт
-    link: ./introduction.md
+    link: ./introduction.html
   - name: Технические характеристики
-    link: ./specifications.md
+    link: ./specifications.html
   - name: Архитектура системы
-    link: ./aliengo.md    
+    link: ./aliengo.html    
   - name: Гайды
-    link: ./tutorials.md
+    link: ./tutorials.html
   - name: Проект rl_go1 (управление робособакой через сдк)
-    link: ./sdk.md    
+    link: ./sdk.html    
   - name: Проект RMA (обучение RL-политик)
-    link: ./rma.md    
+    link: ./rma.html    
