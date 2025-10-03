@@ -7,8 +7,6 @@ title: Unitree-Aliengo
 nav_exclude: false
 
 navigation:
-  - name: Aliengo
-    link: ./README.html
   - name: Быстрый старт
     link: ./introduction.html
   - name: Технические характеристики
